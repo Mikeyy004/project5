@@ -1,0 +1,1142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* this is my header section style  */
+
+.header-section .section-content{
+display: flex;
+justify-content: space-evenly;
+gap: 35%;
+align-items: center;
+position: absolute;
+padding-top: 5%;
+padding-right: 5%;
+}
+
+  .header-section .section-content div{
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .section-content .toggle-menu{
+    background: transparent;
+    position: absolute;
+    right: 10%;
+    width: 40px;
+    z-index: 4;
+    cursor: pointer;
+    opacity: o;
+    margin: 18px -10px 0 0;
+}
+
+header .section-content .menu{
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.459);
+    width: 100%;
+    top: 100%;
+    right: 0;
+    line-height: 30px;
+    transition: 0.7s;
+    z-index: 4;
+
+}
+
+header .section-content .menu .li{
+    width: 100%;
+}
+
+header .section-content .menu li a{
+    color: fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 20px;
+    transition: all 0.7s ease;
+    color: #fff;
+}
+
+header .section-content .menu li a:hover{
+    background: rgba(7, 7, 7, 0.704);
+    color: #7e7e7e;
+    width: 100%;
+}
+
+
+header .section-content .hamburger{
+    position: relative;
+    right: 5%;
+    width: 30px;
+    height: 4px;
+    background: rgba(4, 0, 0, 0.914);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+
+}
+
+header .section-content .hamburger:before,
+header .section-content .hamburger:after{
+    content:"" ;
+    position: absolute;
+    height: 4px;
+    background: #000;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+
+header .section-content.hamburger:before{
+    top: -10px;
+    width: 10px;
+    left: 0;
+}
+
+
+header .section-content .hamburger:after{
+    top: 10px;
+    width: 10px;
+    right: 0;
+}
+
+header .section-content .open{
+    background: transparent;
+
+} 
+header .section-content .open:before{
+    top: 0;
+    transform: rotate(405deg);
+    width: 100%;
+
+}
+header .section-content .open:after{
+    top: 0;
+    transform: rotate(-405deg);
+    width: 100%;
+
+}
+header .section-content .menu.dropped{
+    max-height: 800px;
+}
+
+header .section-content .cart{
+    gap: 20%;
+    margin-right: 15%;
+    width: 80%;
+}
+
+/* this is the of header section style  */
+
+/* this is my hero section style  */
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Banner.png);
+    background-size: cover;
+    background-position: center;
+}
+.hero-section .section-content{
+    padding-top: 60%;
+    
+}
+.hero-section .section-content .title{
+     padding-left: 10%;
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+}
+
+
+.hero-section .section-content .description{
+    font-size: small;
+    font-weight: 800;
+    color: black;
+    padding-right: 10%;
+}
+
+
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop-men{
+    
+    padding:10px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.shop-women{
+    
+    padding:10px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 100;
+}
+.sub-title{
+padding-top: 25%;
+color: black;
+padding-left: 7%;
+font-size: 100%;
+font-weight: 700;
+}
+/* this is the end of my hero section style  */
+
+/* this is my about section  */
+ .about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    overflow: hidden;
+   }
+.about-list{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-top: 3%;
+    padding-left:  40%;
+}
+.about-section .section-inner p{
+    color: gray;
+    padding-top: 3%;
+}
+.about-section .section-inner button{
+    margin-top: 10%;
+}
+.about-section .section-content .about-list .about-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center; 
+  }
+  .about-section .section-content img{
+    width: 60%;
+    height: auto;
+  }
+.description{
+display: flex;
+justify-content: space-evenly;
+gap: 1px;
+}
+.description h2{
+    font-weight: 200;
+    font-size: 20px;
+}
+.description h3{
+    font-weight: 100;
+    font-size:15px;
+}
+.description p{
+    font-weight: 900;
+}
+.about-section hr{
+    margin-top: 1%;
+    margin-left: 30%;
+    color: black;
+    width: 40%;
+}
+/* this is the end of my about section  */
+
+/* this is my best sellers section */
+.best-sellers{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    overflow: hidden;
+   }
+.best-list{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-top: 5%;
+   
+}
+.best-sellers .section-content .best-list .sellers-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center; 
+  }
+  .best-sellers .section-content img{
+    width: 80%;
+    height: auto;
+  }
+.description{
+display: flex;
+justify-content: space-evenly;
+gap: 1px;
+}
+.description h2{
+    font-weight: 200;
+    font-size: 20px;
+}
+.description h3{
+    font-weight: 100;
+    font-size:15px;
+}
+.description p{
+    font-weight: 900;
+}
+.best-sellers hr{
+    margin-top: 5%;
+   margin-left: 15%;
+    color: black;
+    width: 70%;
+}
+/* this is the end of my best sellers section  */
+/* this is my image section style  */
+.image-section{
+    margin-top: 5%;
+    background-image: url(../images/Rectangle\ 59.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.image-section p{
+    font-size: small;
+    color: white;
+    font-weight: 600;
+    padding-top: 20%;
+    padding-right: 74%;
+}
+.image-section h2{
+    color: white;
+    padding-left: 5%;
+}
+.image-section h3{text-align: center;
+    padding-left: 50%;
+    color: white;
+    font-weight: 100;
+    font-size: smaller;
+}
+/* my image section style ends here  */
+
+/* this is my catalogue section  */
+.catalogue-section{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    overflow: hidden;
+   }
+.catalogue-list{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-top: 5%;
+   
+}.catalogue-section span {
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    margin-top: 10%;
+}
+hr{
+    margin-top: 0%;
+    margin-left: 0%;
+    color: black;
+    width: 50%;
+}
+
+.catalogue-section .section-content .catalogue-list .catalogue-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center; 
+  }
+  .catalogue-section .section-content img{
+    width: 80%;
+    height: auto;
+  }
+.description{
+display: flex;
+justify-content: space-evenly;
+gap: 1px;
+}
+
+
+
+.description h2{
+   font-weight: 200px;
+ font-size: 200px;
+
+}
+button{
+    color: white;
+    background-color: black;
+    padding:3% 5%;
+    margin: 3%;
+}
+/* this is the end of my catalogue section  */
+
+/* this is my watch section  */
+.watch-section{
+    height: 80vh;
+    padding: 5% 0;
+    margin-top: 5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+.watch-section img{
+    width: 100%;
+}
+.watch-section p{
+font-size:90%;
+padding: 2% 10%;
+}
+.watch-section .section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.watch-section button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 100%;
+    
+}
+
+/* this is the end of my watch section  */
+
+/* this is my suits section  */
+.suits-section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    overflow: hidden;
+   }
+.suits-list{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-top: 3%;
+    padding-left:  40%;
+}
+.suits-section .section-inner p{
+    color: gray;
+    padding-top: 3%;
+}
+.suits-section .section-inner button{
+    margin-top: 10%;
+}
+.suits-section .section-content .suits-list .suits-item {
+    flex: 0 0 100%;
+    scroll-snap-align: center; 
+  }
+  .suits-section .section-content img{
+    width: 60%;
+    height: auto;
+  }
+.description{
+display: flex;
+justify-content: space-evenly;
+gap: 1px;
+}
+.description h2{
+    font-weight: 200;
+    font-size: 20px;
+}
+.description h3{
+    font-weight: 100;
+    font-size:15px;
+}
+.description p{
+    font-weight: 100;
+    
+}
+.suits-section hr{
+    margin-top: 1%;
+    margin-left: 30%;
+    color: black;
+    width: 40%;
+}
+/* this is the end of my designer section  */
+
+/* this is my retro section  */
+.retro-section{
+    margin-top: 5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+.retro-section img{
+    width: 100%;
+}
+.retro-section p{
+font-size:90%;
+padding: 2% 10%;
+}
+.retro-section .section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.retro-section button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 40%;
+    
+}
+/* this is the  end of my retro section  */
+
+/* this is my newsletter section  */
+.newsletter-section{
+    height: 50vh;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background-color: whitesmoke;
+ margin-top: 5%;
+}
+.newsletter-section .retro-details{
+    display: grid;
+    gap: 5%;
+    margin-top: 5%;
+}
+.form{
+    width: 330px;
+    
+}
+.email{
+    font-family: 'Times New Roman', Times;
+    width: 160px;
+    height: 45px;
+    background: rgb(196, 188, 188);
+    color: white;
+    border-right: none;
+    font-size: 15px;
+    float: left;
+    margin-left: 5%;
+  margin-top: 3%;
+  border: none;
+  padding-left: 1%;
+}
+.btn{
+    width: 120px ;
+    height: 45px;
+    background: black;
+    color: white;
+    font-size: 1;
+     margin-right: 6%;
+     padding-bottom: 2%;
+     
+}
+.btn:focus{
+    outline: none;
+
+}
+.email:focus{
+    outline: none;
+}
+
+ /* this is the end of my newsletter section  */
+
+ /* this is my footer section  */
+ .footer-section{
+    height: 120vh;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding-top: 10%;
+    flex-wrap: wrap;
+    color: #fff;
+    background-color: black;
+   }
+.footer-content .section-content .footer-list{ 
+    display: grid;
+    gap: 100%;
+
+}
+.footer-section .footer-list {
+    display: grid;
+    gap: 5%;
+
+}
+
+.footer-section .section-content .footer-item h2{
+    margin-left: 20%;
+}
+.footer-section .footer-list .footer-item{
+    display: grid;
+    gap: 5%;
+    text-align: left;
+}
+
+.footer-section .footer-list .footer-item ul{
+list-style: none;
+text-decoration: none;
+}
+.footer-section .footer-list .footer-item ul a{
+text-decoration: none;
+color: #fff;
+}
+.footer-section .footer-list .help ul a:hover{
+    text-decoration: underline;
+    color: #3d3834; 
+}
+
+
+
+.footer-section hr{
+    width: 100%;
+    color: #ffffff;
+    margin-top: 13%;
+}
+.footer-section span{
+    color: #ffffff;
+    
+}
+
+/* responsiveness for devices with min width of 768px (ipad)  */
+@media (min-width: 768px) {
+    header .header-inner .menu {
+        top: 30%;
+    
+    }
+    .header-section .section-content {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 160%;
+        align-items: center;
+        position: absolute;
+        padding-right: 5%;
+    }
+
+    .header-section .header-image {
+        width: 40%;
+        padding-right: 100%;
+    }
+
+    .header-section .cart-image {
+        width: 80%;
+    }
+
+    .hero-section .section-content .title {
+        padding-left: 5%;
+        font-size: 80px;
+
+    }
+
+    .hero-section .section-content .description {
+        font-size: 25px;
+        font-weight: 800;
+        padding-right: 35%;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+        padding-top: 10%;
+        justify-content: flex-start;
+        padding-left: 5%;
+    }
+
+    .shop-men {
+        font-size: larger;
+        padding: 20px;
+        width: 150px;
+        padding-right: 2%;
+    }
+
+    .shop-women {
+        font-size: larger;
+        padding: 20px;
+        width: 150px;
+
+    }
+
+    .sub-title {
+        padding-top: 15%;
+        color: black;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+    .about-section .section-content img {
+        width: 90%;
+        height: auto;
+    }
+
+    .about-section {
+        padding: 0 2%;
+        height: 70vh;
+    }
+
+    .about-list {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-top: 3%;
+        padding-left: 0;
+
+    }
+
+    .about-section hr {
+        margin-top: 1%;
+        width: 100%;
+    }
+
+    .about-section .section-content .about-list .about-item {
+        flex: 0 0 25%;
+        scroll-snap-align: center;
+    }
+
+    .about-section .section-inner p {
+        color: gray;
+        font-size: 30px;
+    }
+
+    .about-section .section-inner button {
+        margin-top: 10%;
+        font-size: larger;
+        width: 200px;
+
+    }
+
+    .about-section .section-content .title {
+        font-size: 50px;
+    }
+
+    .best-sellers .section-content .title {
+        font-size: 50px;
+    }
+
+    .best-sellers .section-content .description p {
+        font-size: 40px;
+    }
+    .best-sellers .section-content .best-list .sellers-item {
+        flex: 0 0 43%;
+        scroll-snap-align: center;
+        margin-left: 5%;
+    }
+
+    .best-sellers .section-content .description h2 {
+        font-size: 40px;
+    }
+    .best-sellers .section-content img{
+        width: 100%;
+    }
+
+    .image-section p{
+        padding-left: 10%;
+    }
+
+
+
+    .catalogue-section hr {
+        margin-top: 1%;
+        padding-right: 60%;
+        width: 100%;
+        color: #000;
+    }
+    .catalogue-section .section-content .catalogue-list .catalogue-item {
+        flex: 0 0 33%;
+        scroll-snap-align: center;
+    }
+
+    .catalogue-section .section-content .description p {
+        font-size: 20px;
+    }
+
+    .catalogue-section .section-content .description h2 {
+        font-size: 20px;
+    }
+
+    .catalogue-section button {
+        font-size: 20px;
+        padding: 17px;
+    }
+
+    .watch-section .title {
+        font-size: 40px;
+    }
+
+    .watch-section p {
+        font-size: 25px;
+    }
+
+    .watch-section button {
+        font-size: 20px;
+        padding-right: 0%;
+    }
+
+    .suits-section .section-content img {
+        width: 90%;
+        height: auto;
+    }
+
+    .suits-section {
+        padding: 0 2%;
+        height: 70vh;
+    }
+
+    .suits-list {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-top: 3%;
+        padding-left: 0;
+    }
+
+    .suits-section hr {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .suits-section .section-content .suits-list .suits-item {
+        flex: 0 0 25%;
+        scroll-snap-align: center;
+
+    }
+
+    .suits-section .section-inner p {
+        color: gray;
+        font-size: 30px;
+    }
+
+    .suits-section .section-inner button {
+        margin-top: 10%;
+        font-size: larger;
+        width: 200px;
+padding-right: 0%;
+text-align: center;
+    }
+
+    .suits-section .section-content .title {
+        font-size: 50px;
+    }
+
+    .retro-section .title {
+        font-size: 40px;
+    }
+
+    .retro-section p {
+        font-size: 25px;
+    }
+
+    .retro-section button {
+        width: 40%;
+        padding: 5% 0;
+    }
+
+    .newsletter-section {
+        height: 50vh;
+        margin-top: 5%;
+
+    }
+
+    .newsletter-section .retro-details {
+        display: grid;
+        gap: 5%;
+
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        width: 330px;
+        padding: 0%;
+    }
+
+    .email {
+        font-size: 25px;
+        width: 500px;
+        height: 50px;
+        margin-top: 5%;
+margin-left: 33%;
+    }
+
+    .newsletter-section .btn {
+        width: 200px;
+        font-size: 1;
+        margin-top: 15%;
+        font-size: 15px;
+        margin-right: 5%;
+        height: 50px;
+    }
+
+    .btn:focus {
+        outline: none;
+
+    }
+
+    .email:focus {
+        outline: none;
+    }
+
+    .newsletter-section .title {
+        font-size: 40px;
+    }
+
+    .newsletter-section .description {
+        font-size: 25px;
+    }
+
+    /* this is my footer section  */
+    .footer-section {
+        height: 40vh;
+        padding: 0%;
+        text-align: center;
+    }
+
+    .footer-section .footer-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 40px;
+        align-items: center;
+        text-align: right;
+      
+    }
+
+    .footer-section .footer-item {
+        margin-top: -3%;
+    }
+
+    .footer-section h2 {
+        font-size: xx-large;
+    }
+
+  
+.footer-section .footer-list{
+    align-items: start;
+}
+
+
+
+}
+
+/* responsiveness for devices with min width of 1200 (ipad pro)  */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    header .header-inner .menu {
+        top: 20%;
+      
+    }
+    .header-section .section-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 550px;
+    }
+
+    header .header-inner {
+        margin-top: 0%;
+    
+    }
+
+    .hero-section {
+        height: 150vh;
+    }
+
+    .hero-section .section-content .title {
+        padding-left: 5%;
+        font-size: 80px;
+        margin-top: -30%;
+    }
+
+    .hero-section .section-content .description {
+        font-size: 25px;
+        font-weight: 400;
+        padding-right: 60%;
+        padding-top: 2%;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+        padding-top: 5%;
+        justify-content: flex-start;
+        padding-left: 5%;
+        width: 100%;
+    }
+
+    .shop-men {
+        font-size: larger;
+        padding: 20px;
+        width: 150px;
+
+    }
+
+    .shop-women {
+
+        font-size: larger;
+        padding: 20px;
+        width: 150px;
+        ;
+    }
+
+    .sub-title {
+        padding-top: 8%;
+        color: black;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+    .about-section {
+        height: 130vh;
+    }
+
+    .best-sellers .section-content .best-list .sellers-item {
+        flex: 0 0 42%;
+        scroll-snap-align: center;
+    }
+
+    .best-sellers .section-content img {
+        width: 80%;
+        height: auto;
+    }
+
+    .catalogue-section .title {
+        font-size: 50px;
+    }
+
+    .catalogue-section .section-content .catalogue-list .catalogue-item {
+        flex: 0 30%;
+        scroll-snap-align: center;
+
+    }
+
+    .catalogue-section .section-content img {
+        padding-left: 25%;
+        width: 80%;
+        height: auto;
+
+    }
+
+    .catalogue-section .section-content .description {
+        padding-left: 25%;
+
+    }
+
+    .catalogue-section .section-content .description p {
+        font-weight: 800;
+
+    }
+
+    .watch-section {
+        height: 150vh;
+        padding: 0 10%;
+    }
+
+    .watch-section .section-content p {
+        font-size: 30px;
+    }
+
+    .suits-section {
+        height: 150vh;
+    }
+
+    .retro-section .retro-details {
+        margin-top: 5%;
+    }
+
+    .retro-section .section-content button {
+        width: 20%;
+        padding: 2% 5%;
+
+    }
+
+    .retro-section .section-content button p {
+        font-size: 15px;
+
+    }
+
+    .newsletter-section {
+        height: 80vh;
+    }
+
+    .newsletter-section .retro-details {
+        margin-top: -10px;
+        display: grid;
+        gap: 10%;
+        padding: 0 10%;
+
+    }
+
+    .email {
+        font-size: 25px;
+        width: 800px;
+        height: 50px;
+        margin-top: 5%;
+        margin-left: 15%;
+
+    }
+
+    .newsletter-section .btn {
+        width: 200px;
+        font-size: 1;
+        margin-top: 22%;
+        font-size: 15px;
+        margin-right: 5%;
+        height: 50px;
+    }
+
+    .footer-section {
+        display: flex;
+        height: 60vh;
+
+    }
+
+    .footer-section hr {
+        width: 100%;
+    }
+
+    .footer-section .section-content .footer-list {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    .footer-section hr {
+        margin-top: 50px;
+    }
+
+    .footer-section span {
+        padding-top: 5px;
+    }
+}
